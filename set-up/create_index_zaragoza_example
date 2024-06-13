@@ -1,0 +1,18 @@
+PUT zaragoza-taxi
+{
+      "mappings": {
+        "properties": {
+          "coords":
+          {"type": "geo_point"
+        },
+          "estado":
+          {"type": "text"
+        },
+          "id":
+          {"type": "text"
+        }
+
+      }
+    }
+}
+

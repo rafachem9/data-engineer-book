@@ -1,0 +1,25 @@
+PUT scf_v3
+{
+  "mappings":{
+    "properties":{
+      "coords":{
+        "type":"geo_point"
+      },
+      "status":{
+        "type":"text"
+      },
+      "summary":{
+        "type":"text"
+      },
+      "description":{
+        "type":"text"
+      },
+      "open_date":{
+        "type":"date"
+      },
+      "close_date":{
+        "type":"date"
+      }
+    }
+  }
+}

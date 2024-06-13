@@ -1,16 +1,9 @@
-import urllib
-import requests
-import json
-from elasticsearch import Elasticsearch
-from elasticsearch import helpers
 import os
 
-from util.api_utils import get_data_api
 from util.variables import logger
-from util.elastic_utils import insert_data_elasticsearch
-from util.execution_utils import execution
-from etl.extract_data import extract_data_seeclickfix
+from projectutils.elastic_utils import insert_data_elasticsearch
 
+from etl.extract_data import extract_data_seeclickfix
 
 # API information
 logger.info('Data extraction process started from seeclickfix')
@@ -43,8 +36,6 @@ for review in all_data:
             "close_date": close_date
     }
     actions.append(dict_test)
-
-
 
 insert_data_elasticsearch(logger, elastic_host, elastic_user, elastic_pass, index_name, actions)
 

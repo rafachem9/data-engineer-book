@@ -1,9 +1,9 @@
 import os
 
-from util.api_utils import get_data_api
+from projectutils.api_utils import get_data_api
 from util.variables import logger
-from util.elastic_utils import insert_data_elasticsearch
-from util.execution_utils import execution
+from projectutils.elastic_utils import insert_data_elasticsearch
+from projectutils.execution_utils import execution
 
 
 def main():
@@ -38,4 +38,4 @@ def main():
 
 
 if __name__ == '__main__':
-    execution(main, 'Zaragoza API example')
+    execution(logger, main, 'Zaragoza API example')

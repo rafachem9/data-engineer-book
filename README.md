@@ -1,7 +1,7 @@
 # data-engineer-book
 ## Python versión
 - We use Python version 3.10
-- utils version corresponds to 1.1.0 from repotemplates (Pending update)
+- projectutils version 1.0.0
 
 ## set-up repo
 - Create elasticsearch index: 
